@@ -1,0 +1,431 @@
+@import "common.css";
+
+/*
+header a {
+    --main-white: black;
+    color: var(--main-white);
+}
+*/
+
+
+/*.main-section {*/
+/*    min-height: 100vh; !*уточнить зачем это*!*/
+/*    background: center/cover no-repeat var(--gradient-Soft);*/
+/*    padding-top: 100px;*/
+/*    width: 1440px;*/
+/*    height: 800px;*/
+/*}*/
+
+
+header {
+    position: relative;
+    z-index: 7;
+    background: transparent;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1320px;
+    width: 100%;
+    margin: 50px auto 0;
+}
+
+
+.homepage-header__contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+#homepage-header__contacts_cng-lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.btn a {
+    cursor: pointer;
+
+    padding: 5px 6px;
+    border-radius: 8px;
+
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: var(--main-white);
+}
+
+.btn a:hover {
+    color: var(--gray-text);
+    background-color: var(--gray-BgAlt);
+    border-radius: 8px;
+    transition: all 0.2s ease-out;
+}
+
+.active a {
+    background-color: var(--pink-accent);
+    border-radius: 8px;
+    transition: all 0.2s ease-out;
+}
+
+.homepage-header-zone-text-Address {
+    font-weight: 400;
+    color: var(--main-white);
+
+    margin: 0 10px;
+}
+
+.homepage-header-zone-text-PhoneNumber {
+    font-weight: 700;
+    color: var(--main-white);
+
+    margin: 0 10px 0 5px;
+}
+
+.homepage-header-zone-icon-Facebook {
+    margin-left: 10px;
+    height: 24px;
+}
+
+.homepage-header-zone-icon-Facebook-hover .homepage-header-zone-icon-Facebook-hover:nth-of-type(2) {
+    display: none;
+}
+
+.homepage-header-zone-icon-Facebook-hover:hover .homepage-header-zone-icon-Facebook-hover:nth-of-type(1) {
+    display: none;
+    transition: all 0.2s ease-out;
+}
+
+.homepage-header-zone-icon-Facebook-hover:hover .homepage-header-zone-icon-Facebook-hover:nth-of-type(2) {
+    display: block;
+    transition: all 0.2s ease-out;
+}
+
+.homepage-header-zone-icon-Facebook-hover:hover {
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+
+#homepage-header__nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.link {
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--main-white);
+    border-bottom: none;
+    padding-bottom: 2px;
+    height: 24px;
+}
+
+.link:hover {
+    color: var(--pink-accent);
+    transition: all 0.25s;
+}
+
+.actives {
+    color: var(--pink-accent);
+    transition: all 0.25s;
+    border-bottom: solid 2px var(--pink-accent);
+}
+/*Конец homepage-header-zone*/
+
+/*Начало homepage-gradient-bg-zone*/
+.homepage-gradient-bg-zone-all {
+    width: 1440px;
+    height: 2174px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -115px auto 0;
+}
+
+.homepage-gradient-bg-zone-1 {
+    /*border: 16px solid red; /*для себя перемерить размеры и расстояния*/
+    width: 1440px;
+    height: 1000px;
+    background: center/cover no-repeat var(--gradient-Soft);
+    position: relative;
+    z-index: 1;
+}
+
+.homepage-gradient-bg-zone-2 {
+    /*border: 10px solid #128d80; /*для себя перемерить размеры и расстояния*/
+    width: 1440px;
+    height: 200px;
+    margin-top: -400px;
+    background: center/cover no-repeat var(--gradient-Shade);
+    position: relative;
+    z-index: 5;
+}
+
+.homepage-gradient-bg-zone-3 {
+    /*border: 20px solid #f8c806; /*для себя перемерить размеры и расстояния*/
+    width: 1440px;
+    height: 1374px;
+    border-radius: 0 0 12px 12px;
+    background: center/cover no-repeat var(--gradient-SuperSoft);
+    position: relative;
+    z-index: 2;
+}
+
+.homepage-gradient-bg-zone-img-BackSymbols {
+    position: absolute;
+    z-index: 3;
+    margin-top: 179px;
+}
+
+.homepage-gradient-bg-zone-img-Symbol-LongLeg { /*черех SVG не получается, не хватает кусочка нижнего при выводе */
+    position: absolute;
+    z-index: 4;
+    margin-top: 300px;
+}
+
+.homepage-gradient-bg__content-all {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 6;
+
+    max-width: 1440px;
+    width: 100%;
+    padding: 358px 60px 80px 60px;
+}
+
+.homepage-gradient-bg-zone-text {
+    max-width: 1320px;
+    width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-weight: 400; /*немного не попадает в пиксели, если оставить 400*/
+    font-size: 38px;
+    line-height: 45px;
+    color: var(--main-white);
+}
+
+.homepage-header-zone-icon-ScrollDown {
+    margin-top: 290px;
+}
+
+/*TABS c JQuery*/
+
+.experience {
+    max-width: 1320px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.tabs__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 567px;
+    width: 100%;
+    text-align: right;
+}
+
+.tabs__list li {
+    padding-right: 40px;
+    color: var(--gray-text);
+    border-right: 4px solid var(--gray-text);
+    transition: all .2s;
+}
+
+
+.tabs__list h1{
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    color: inherit;
+}
+
+.homepage-tabs-experience-1:hover, .homepage-tabs-experience-2:hover,
+.homepage-tabs-experience-3:hover, .homepage-tabs-experience-4:hover {
+    background: var(--gradient-RedText);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.25s;
+}
+
+.tabs__list .ui-tabs-active{
+    background: var(--gradient-RedText);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-right: 4px solid var(--pink-accent);
+}
+
+.tabs-1234 {
+    max-width: 600px;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+#tabs-1 h2, #tabs-2 h2, #tabs-3 h2, #tabs-4 h2 {
+    font-weight: 400;
+    color: var(--main-white);
+}
+
+.homepage-tabs-introduction {
+    max-width: 600px;
+    width: 100%;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--main-white);
+    margin-top: 20px;
+}
+
+.homepage-tabs-experience-1 {
+    margin-bottom: 20px;
+}
+
+.homepage-tabs-experience-2 {
+    margin-bottom: 21px;
+}
+
+.homepage-tabs-experience-3 {
+    margin-bottom: 21px;
+}
+/*TABS c JQuery*/
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 80px;
+    max-width: 1320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-title {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--main-white);
+    opacity: 0.5;
+}
+
+.services .HeroTextGradient {
+    margin-top: 2px;
+}
+
+.services-subtitle {
+    font-weight: 400;
+    color: var(--blue-main);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 18px; /*в макете 20px!!!*/
+}
+
+.services-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--main-white);
+
+    margin-top: 15px;
+}
+
+.services-block-card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-top: 66px; /*в макете 68px!!!*/
+}
+
+.services-block-card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-top: 58px;
+}
+
+.services-block-card-1 {
+    max-width: 450px;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.services-block-card-2 {
+    max-width: 413px;
+    width: 100%;
+    margin-right: 41px;
+}
+
+.services-block-card-3 {
+    max-width: 413px;
+    width: 100%;
+}
+
+
+/*Конец homepage-gradient-bg-zone*/
+
+
+/*Начало homepage-card-shadow-zone*/
+.homepage-card-shadow-zone-all {
+    position: relative;
+    z-index: 3;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--main-white);
+}
+
+.homepage-card-shadow-1 {
+    width: 1400px;
+    height: 10px;
+    background: #CACADB;
+    border-radius: 0 0 12px 12px;
+}
+
+.homepage-card-shadow-2 {
+    width: 1360px;
+    height: 10px;
+    background: #E7E7F2;
+    border-radius: 0 0 12px 12px;
+}
+
+/*Конец homepage-card-shadow-zone*/
+
+
+/* Я СДЕЛАЛ */
+
+
+@media (min-width: 568px) {
+    /*.main-section {
+    background: center/cover no-repeat url("../images/main-bg.svg");
+    }*/
+}
